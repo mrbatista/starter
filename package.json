@@ -2,12 +2,16 @@
   "name": "loopback-starter",
   "description": "Loopback Minimal Starter",
   "version": "0.0.0",
+  "keywords": [
+    "loopback-application",
+    "loopback"
+  ],
   "private": true,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "github:loopbackio/starter",
   "engines": {
-    "node": "12 || 14 || 16 || 17"
+    "node": "14 || 16 || 18"
   },
   "scripts": {
     "build": "lb-tsc",
@@ -34,10 +38,6 @@
     "clean": "lb-clean dist *.tsbuildinfo .eslintcache",
     "rebuild": "npm run clean && npm run build"
   },
-  "keywords": [
-    "loopback-application",
-    "loopback"
-  ],
   "files": [
     "README.md",
     "dist",
@@ -45,21 +45,21 @@
     "!*/__tests__"
   ],
   "dependencies": {
-    "@loopback/boot": "^4.0.0",
-    "@loopback/core": "^3.0.0",
-    "@loopback/repository": "^4.0.0",
-    "@loopback/rest": "^11.0.0",
-    "@loopback/rest-explorer": "^4.0.0",
-    "@loopback/service-proxy": "^4.0.0",
-    "tslib": "^2.0.0"
+    "@loopback/boot": "^5.0.0",
+    "@loopback/core": "^4.0.0",
+    "@loopback/repository": "^5.0.0",
+    "@loopback/rest": "^12.0.0",
+    "@loopback/rest-explorer": "^5.0.0",
+    "@loopback/service-proxy": "^5.0.0",
+    "tslib": "^2.4.0"
   },
   "devDependencies": {
-    "@loopback/build": "^8.0.0",
+    "@loopback/build": "^9.0.0",
     "source-map-support": "^0.5.21",
-    "@loopback/testlab": "^4.0.0",
-    "@types/node": "^10.17.60",
-    "@loopback/eslint-config": "^12.0.0",
-    "eslint": "^7.32.0",
-    "typescript": "~4.5.3"
+    "@loopback/testlab": "^5.0.0",
+    "@types/node": "^14.18.18",
+    "@loopback/eslint-config": "^13.0.0",
+    "eslint": "^8.16.0",
+    "typescript": "~4.7.2"
   }
 }
